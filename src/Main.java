@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -28,6 +30,7 @@ public class Main {
 
         set.myclear();
         System.out.println(set.mysize());
+
 
 
     }

@@ -1,3 +1,4 @@
+import java.sql.Array;
 import java.util.HashMap;
 
 public class MyHashSet implements MySet {
@@ -6,9 +7,12 @@ public class MyHashSet implements MySet {
 
     private static final Object PRESENT = new Object();
 
+    int size = 0;
+
     @Override
     public boolean myadd(String e) {
         if (e==null);
+        size++;
         return map.put(e, PRESENT)==null;
     }
 
@@ -40,13 +44,11 @@ public class MyHashSet implements MySet {
     }
 
     @Override
-    public boolean myremove(String e){
-        if (map.remove(e)==PRESENT) {
-            return true;
+    public boolean myremove(String e) {
+        if (map.remove(e) == PRESENT) {
         }
-        else {
-            return false;
-        }
+        size--;
+        return true;
     }
 
     @Override
@@ -54,9 +56,31 @@ public class MyHashSet implements MySet {
         return "MyHashSet " + map.keySet();
     }
 
+
 //        public String[] mytoArray(){
 //            return keysToArray(new Object[map.size()]);
 //    }
 
+
+//    public String[] toArray() {
+//        String[] returnArr = new String[size];
+//        for (int i = 0; i < size; i++) {
+//            returnArr[i] = arr[i].string;
+//        }
+//        return returnArr;
+
+
+//    public String[] toArray() {
+//        String[] result = new String[map.size()];
+//        int index = 0;
+//        for (String tmp : map) {
+//            while (tmp != null) {
+//                result[index] = tmp;
+//                tmp = tmp.next;
+//                index++;
+//            }
+//        }
+//        return result;
+//    }
 
 }
