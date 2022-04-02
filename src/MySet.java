@@ -14,6 +14,6 @@ public interface MySet {
 
     String mytoString();
 
-//    String[] mytoArray();
+    String[] mytoArray();
 
 }

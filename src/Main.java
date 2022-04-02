@@ -18,6 +18,7 @@ public class Main {
         System.out.println(set.mysize());
 
         System.out.println(set.mytoString());
+        System.out.println(set.mytoArray());
 
         System.out.println(set.myisEmpty());
 

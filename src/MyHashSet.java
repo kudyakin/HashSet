@@ -1,4 +1,3 @@
-import java.sql.Array;
 import java.util.HashMap;
 
 public class MyHashSet implements MySet {
@@ -57,30 +56,8 @@ public class MyHashSet implements MySet {
     }
 
 
-//        public String[] mytoArray(){
-//            return keysToArray(new Object[map.size()]);
-//    }
-
-
-//    public String[] toArray() {
-//        String[] returnArr = new String[size];
-//        for (int i = 0; i < size; i++) {
-//            returnArr[i] = arr[i].string;
-//        }
-//        return returnArr;
-
-
-//    public String[] toArray() {
-//        String[] result = new String[map.size()];
-//        int index = 0;
-//        for (String tmp : map) {
-//            while (tmp != null) {
-//                result[index] = tmp;
-//                tmp = tmp.next;
-//                index++;
-//            }
-//        }
-//        return result;
-//    }
+    public String[] mytoArray() {
+        return map.keySet().toArray(new String[0]);
+    }
 
 }
