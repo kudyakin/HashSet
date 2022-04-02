@@ -3,7 +3,7 @@ import java.util.HashMap;
 public class Main {
     public static void main(String[] args) {
 
-         MySet set = new MyHashSet();
+         MySet<String> set = new MyHashSet();
 
         set.myadd("aaa");
         System.out.println(set.mysize());
@@ -18,7 +18,6 @@ public class Main {
         System.out.println(set.mysize());
 
         System.out.println(set.mytoString());
-        System.out.println(set.mytoArray());
 
         System.out.println(set.myisEmpty());
 

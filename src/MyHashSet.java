@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class MyHashSet implements MySet {
+public class MyHashSet implements MySet<String> {
 
     private HashMap<String, Object> map = new HashMap<>();
 
@@ -55,9 +55,7 @@ public class MyHashSet implements MySet {
         return "MyHashSet " + map.keySet();
     }
 
-
     public String[] mytoArray() {
         return map.keySet().toArray(new String[0]);
     }
-
 }

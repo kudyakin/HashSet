@@ -1,4 +1,4 @@
-public interface MySet {
+public interface MySet<E> {
 
     boolean myadd(String e);
 
