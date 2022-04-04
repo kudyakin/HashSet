@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class Main {
@@ -18,6 +19,8 @@ public class Main {
         System.out.println(set.mysize());
 
         System.out.println(set.mytoString());
+
+        System.out.println(Arrays.toString(set.mytoArray()));
 
         System.out.println(set.myisEmpty());
 
